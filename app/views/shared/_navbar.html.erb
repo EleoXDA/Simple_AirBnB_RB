@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <%= link_to "Simple Airbnb", root_path, class: "navbar-brand" %>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="ms-auto d-flex">
+        <form class="d-flex my-2 my-lg-0">
+          <input class="form-control me-2" name="query" type="search" placeholder="Search" aria-label="Search" value="<%= params[:query] %>">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <%= link_to "Add Flat", new_flat_path, class: "btn btn-outline-primary my-2 my-sm-0 ms-2" %>
+      </div>
+    </div>
+  </div>
+</nav>
